@@ -17,7 +17,6 @@ p,li{font-size:27px;line-height:1.5;font-weight:300}
 b,strong{font-weight:700}
 .lead{font-size:31px;line-height:1.45;font-weight:400}
 .r{color:var(--red);font-weight:700}
-.g{color:var(--gd);font-weight:700}
 .dim{color:var(--muted)}
 .kicker{font-size:17px;letter-spacing:3px;color:var(--gd);font-weight:700;margin-bottom:8px}
 .ws{display:inline-block;background:var(--red);color:#fff;border-radius:30px;padding:4px 18px;font-size:18px;font-weight:700;vertical-align:middle;margin-right:14px;letter-spacing:0}
@@ -31,10 +30,10 @@ ul.dots li:before{content:"";position:absolute;right:4px;top:15px;width:13px;hei
 .card .tag{display:inline-block;font-size:16px;font-weight:700;color:var(--gdd);background:var(--gp);border-radius:20px;padding:2px 12px;margin-bottom:10px}
 .statement{font-size:42px;line-height:1.35;font-weight:700;color:var(--ink)}
 .closing{font-size:29px;font-weight:700;color:var(--gdd);margin-top:auto;background:var(--gt);border-right:8px solid var(--g);border-radius:10px;padding:14px 26px}
-.slide.spread{justify-content:space-between}
-.fill{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center}
-.slide.spread .closing{margin-top:0}
 .closing.c{text-align:center}
+.slide.spread{justify-content:space-between}
+.slide.spread .closing{margin-top:0}
+.fill{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center}
 .prompt{background:#fff;border:1.5px solid var(--line);border-right:8px solid var(--g);border-radius:8px;padding:18px 26px;font-size:23px;line-height:1.55;font-weight:300}
 .prompt .lb{font-size:15px;letter-spacing:3px;color:var(--gd);font-weight:700;display:block;margin-bottom:6px}
 .prompt p{font-size:24px;line-height:1.6}
@@ -45,8 +44,8 @@ th:first-child{background:var(--gd)}
 td{padding:22px 20px;border-bottom:1px solid var(--line);font-size:27px;line-height:1.4;background:#fff;vertical-align:top}
 tbody tr:nth-child(even) td{background:var(--gt)}
 .logo{position:absolute;top:34px;left:60px;width:150px}
-.qr{position:absolute;left:60px;bottom:52px;background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:10px 10px 8px;text-align:center;width:170px}
-.qr img{width:148px;display:block;margin:0 auto}
+.qr{position:absolute;left:60px;bottom:52px;background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:10px 10px 8px;text-align:center;width:180px}
+.qr img{width:150px;display:block;margin:0 auto}
 .qr span{display:block;font-size:16px;font-weight:700;color:var(--gdd);margin-top:4px}
 /* idea cloud */
 .cloud{display:flex;flex-wrap:wrap;gap:18px 16px;margin-top:20px;max-width:1080px}
@@ -54,40 +53,56 @@ tbody tr:nth-child(even) td{background:var(--gt)}
 .chip:nth-child(3n+2){border-color:var(--gd);background:var(--gt)}
 .chip:nth-child(3n){border-color:var(--red)}
 /* chain */
-.chain{display:flex;align-items:flex-start;justify-content:space-between;margin:30px 0 10px}
+.chain{display:flex;align-items:flex-start;justify-content:space-between;margin:20px 0 6px}
 .node{display:flex;flex-direction:column;align-items:center;width:165px}
 .node .c{width:140px;height:140px;border-radius:50%;border:4px solid var(--g);background:#fff;display:flex;align-items:center;justify-content:center;font-size:50px;font-weight:800;color:var(--gd)}
 .node.hot .c{background:var(--gd);border-color:var(--gd);color:#fff}
 .node .t{font-size:31px;font-weight:700;margin-top:12px;color:var(--ink)}
 .arrow{font-size:44px;color:var(--g);margin-top:44px}
-.hotlabel{display:inline-block;background:var(--gp);color:var(--gdd);font-weight:700;font-size:20px;border-radius:20px;padding:4px 16px}
+.hotlabel{display:inline-block;background:var(--gp);color:var(--gdd);font-weight:700;font-size:22px;border-radius:20px;padding:6px 18px}
 /* phones */
-.phones{display:flex;gap:22px;justify-content:center;align-items:flex-end}
-.phone{width:150px;height:290px;border:5px solid #3a3936;border-radius:24px;background:#fff;padding:22px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:10px;box-shadow:0 8px 20px rgba(0,0,0,.12);position:relative}
+.phones{display:flex;gap:18px;justify-content:center;align-items:flex-end}
+.phone{width:162px;height:300px;border:5px solid #3a3936;border-radius:24px;background:#fff;padding:22px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:9px;box-shadow:0 8px 20px rgba(0,0,0,.12);position:relative}
 .phone:before{content:"";position:absolute;top:8px;width:40px;height:5px;border-radius:3px;background:#3a3936}
-.phone .pt{font-size:17px;font-weight:800;color:var(--gd);text-align:center;line-height:1.25}
-.phone .btn{background:var(--g);color:#fff;font-size:14px;font-weight:700;border-radius:20px;padding:6px 14px;margin-top:auto}
+.phone .pt{font-size:18px;font-weight:800;color:var(--gd);text-align:center;line-height:1.25}
+.phone .btn{background:var(--g);color:#fff;font-size:14px;font-weight:700;border-radius:20px;padding:6px 12px;margin-top:auto;text-align:center}
 .phone .dotsrow{display:grid;grid-template-columns:repeat(2,34px);gap:10px;margin-top:8px}
 .phone .dotsrow i{width:34px;height:34px;border-radius:50%;background:var(--gp);border:2px solid var(--g)}
 .phone .role{width:100%;font-size:14px;background:var(--gt);border-radius:8px;padding:5px 8px;font-weight:500}
 .phone .num{font-size:13px;color:var(--muted)}
-/* gemini mock */
-.gem-mock{background:#fff;border:1.5px solid #d9dde3;border-radius:28px;padding:20px 24px 16px;box-shadow:0 10px 30px rgba(0,0,0,.08);width:520px}
-.gem-mock .ph{font-size:22px;color:#8a8f98;margin-bottom:26px}
-.gem-mock .row{display:flex;gap:10px;align-items:center}
-.gem-mock .pill{border:1.5px solid #d9dde3;border-radius:20px;padding:6px 14px;font-size:18px;color:#555}
-.gem-mock .pill.on{border:3px solid var(--red);color:var(--red);font-weight:700;background:#fff5f5}
-.gem-mock .plus{width:36px;height:36px;border-radius:50%;border:1.5px solid #d9dde3;display:flex;align-items:center;justify-content:center;font-size:22px;color:#555}
-.gem-mock .model{margin-right:auto;font-size:17px;color:#555;border:1.5px solid #d9dde3;border-radius:20px;padding:6px 14px}
-.callout{font-size:20px;font-weight:700;color:var(--red);margin-top:10px;margin-right:120px}
-/* gem editor mock */
-.editor{background:#fff;border:1.5px solid #d9dde3;border-radius:16px;padding:20px 22px;width:470px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
-.editor .fl{font-size:16px;font-weight:700;color:#555;margin:10px 0 4px}
-.editor .fb{border:1.5px solid #d9dde3;border-radius:8px;height:34px;background:#fafbfc}
-.editor .fb.tall{height:110px;border:3px solid var(--red);background:#fff}
-.editor .fb.files{height:auto;display:flex;gap:8px;padding:6px;background:#fff}
-.editor .fb.files i{font-style:normal;font-size:14px;background:var(--gt);border:1px solid var(--line);border-radius:6px;padding:4px 8px}
-.editor .rw{display:inline-block;margin-top:8px;font-size:15px;color:var(--gdd);border:1.5px dashed var(--g);border-radius:16px;padding:3px 12px}
+.phone .qc{width:100%;background:var(--gt);border:1.5px solid var(--g);border-radius:10px;padding:10px 8px;display:flex;flex-direction:column;gap:6px}
+.phone .ln{height:7px;border-radius:4px;background:#d9e6cc}
+.phone .ln.s{width:70%}
+.phone .tm{font-size:20px;font-weight:800;color:var(--red);margin-top:4px}
+.phone .ta{width:100%;height:80px;border:1.5px solid #d9dde3;border-radius:8px;padding:8px;display:flex;flex-direction:column;gap:6px}
+.phone .ta .ln{background:#e7e9ec}
+/* gemini mock (as in the real interface) */
+.gm{width:510px}
+.gm .bar{background:#fff;border:1.5px solid #dfe3e8;border-radius:30px;height:62px;display:flex;align-items:center;padding:0 18px;gap:12px;box-shadow:0 8px 26px rgba(0,0,0,.08)}
+.gm .plus{width:34px;height:34px;border-radius:50%;background:#eef1f4;display:flex;align-items:center;justify-content:center;font-size:24px;color:#333;font-weight:300;border:2.5px solid var(--red)}
+.gm .ph{font-size:19px;color:#8a8f98}
+.gm .model{margin-right:auto;font-size:18px;color:#333}
+.gm .menu{margin-top:8px;margin-right:0;width:250px;background:#fff;border:1.5px solid #e3e6ea;border-radius:16px;padding:8px 6px;box-shadow:0 10px 26px rgba(0,0,0,.1)}
+.gm .mi{font-size:17px;color:#333;padding:6px 14px;border-radius:8px}
+.gm .mi .ch{float:left}
+.gm .mi.on{border:2.5px solid var(--red);color:var(--red);font-weight:700;background:#fff6f6}
+.gm .sep{height:1px;background:#e7e9ec;margin:5px 8px}
+/* gem editor mock (from the real "Gem חדש" screen) */
+.ge{width:640px;background:#fff;border:1.5px solid #dfe3e8;border-radius:16px;padding:16px 18px;box-shadow:0 10px 30px rgba(0,0,0,.08);font-size:14px;color:#333}
+.ge .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.ge .ttl{font-size:18px;font-weight:700}
+.ge .save{background:#e9ecef;color:#777;border-radius:16px;padding:4px 14px;font-size:14px}
+.ge .body{display:flex;gap:14px}
+.ge .fields{flex:1.25}
+.ge .prev{flex:1;background:#fafbfc;border:1px solid #eceff2;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#888;font-size:13px;text-align:center;padding:10px}
+.ge .prev b{display:block;color:#555;font-size:14px;margin-bottom:6px}
+.ge .fl{font-size:13.5px;font-weight:700;color:#444;margin:7px 0 3px}
+.ge .fb{border:1px solid #e3e6ea;border-radius:8px;background:#fafbfc;padding:6px 10px;color:#999;font-size:13px}
+.ge .fb.big{height:84px;border:2.5px solid var(--red);background:#fff;position:relative}
+.ge .fb.big .pen{position:absolute;left:8px;bottom:6px;width:28px;height:28px;border-radius:50%;border:2px solid var(--red);display:flex;align-items:center;justify-content:center;color:var(--red);font-size:14px;font-weight:700}
+.ge .row2{display:flex;justify-content:space-between;align-items:center;margin-top:8px;font-size:13.5px}
+.ge .row2 b{font-weight:700;color:#444}
+.ge .cb{margin-top:7px;color:#888;font-size:12.5px}
 /* timeline */
 .tl{position:relative;display:flex;justify-content:space-between;margin:14px 10px 6px;padding-top:28px}
 .tl:before{content:"";position:absolute;top:36px;right:0;left:0;height:4px;background:var(--line)}
@@ -102,24 +117,29 @@ tbody tr:nth-child(even) td{background:var(--gt)}
 .reasons .card p{font-size:22px;line-height:1.4}
 .reasons .card .n{font-size:22px;font-weight:800;color:var(--gd)}
 /* sources diagram */
-.src-dia{position:relative;width:470px;height:430px}
-.src-dia .bot{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:150px;height:150px;border-radius:50%;background:var(--gd);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:26px;font-weight:800}
+.src-dia{position:relative;width:440px;height:400px}
+.src-dia .bot{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:150px;height:150px;border-radius:50%;background:var(--gd);color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:800}
 .src-dia .s{position:absolute;background:#fff;border:2px solid var(--g);border-radius:12px;padding:10px 14px;font-size:20px;font-weight:700;text-align:center;width:150px}
-.src-dia .s.nb{border:3px solid var(--red);width:180px;background:#fff8f8}
+.src-dia .s.nb{border:3px solid var(--red);width:170px;background:#fff8f8}
 .src-dia svg{position:absolute;inset:0}
-/* numbered take-aways */
-ol.five{list-style:none;counter-reset:n;margin-top:6px}
-ol.five li{counter-increment:n;position:relative;padding-right:74px;margin:13px 0;font-size:27px}
-ol.five li:before{content:counter(n);position:absolute;right:6px;top:2px;width:44px;height:44px;border-radius:6px;background:var(--gd);color:#fff;font-weight:800;font-size:24px;display:flex;align-items:center;justify-content:center;transform:rotate(-12deg)}
+/* five take-aways grid */
+.five{display:grid;grid-template-columns:repeat(6,1fr);gap:20px;flex:1;margin-top:6px}
+.five .card{grid-column:span 2;display:flex;flex-direction:column;padding:24px 26px}
+.five .card:nth-child(4){grid-column:2 / span 2}
+.five .card:nth-child(5){grid-column:4 / span 2}
+.five .nb{width:50px;height:50px;border-radius:8px;background:var(--gd);color:#fff;font-weight:800;font-size:26px;display:flex;align-items:center;justify-content:center;transform:rotate(-12deg);margin-bottom:14px}
+.five h4{font-size:30px}
+.five p{font-size:24px}
 ol.steps{list-style:none;counter-reset:n}
-ol.steps li{counter-increment:n;position:relative;padding-right:58px;margin:24px 0}
+ol.steps li{counter-increment:n;position:relative;padding-right:58px;margin:22px 0}
 ol.steps li:before{content:counter(n);position:absolute;right:0;top:4px;width:40px;height:40px;border-radius:50%;background:var(--gp);border:2px solid var(--g);color:var(--gdd);font-weight:800;font-size:21px;display:flex;align-items:center;justify-content:center}
+.url{direction:ltr;unicode-bidi:isolate;display:inline-block;font-weight:500;background:var(--gt);border:1px solid var(--line);border-radius:6px;padding:0 10px}
 /* bio */
 .logos{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-top:auto;padding-top:10px}
 .logos img{object-fit:contain}
 /* separators */
-.slide.sep{background:var(--sep) !important;color:#fff}
-.slide.sep h2,.slide.sep .kicker,.slide.sep .agenda .it,.slide.sep .bigsep{-webkit-text-stroke:1px #1F1E1C;paint-order:stroke fill;text-shadow:0 1px 3px rgba(0,0,0,.3);color:#fff}
+.slide.sep{background:var(--sep);color:#fff}
+.slide.sep h2,.slide.sep .kicker,.slide.sep .agenda .it,.slide.sep .bigsep,.slide.sep .backat{-webkit-text-stroke:1px #1F1E1C;paint-order:stroke fill;text-shadow:0 1px 3px rgba(0,0,0,.3);color:#fff}
 .slide.sep h2{font-size:66px;margin-bottom:26px}
 .slide.sep .kicker{font-size:22px}
 .logo-card{position:absolute;top:36px;left:60px;background:#fff;border-radius:12px;padding:10px 16px}
@@ -130,17 +150,17 @@ ol.steps li:before{content:counter(n);position:absolute;right:0;top:4px;width:40
 .agenda .it .n{font-size:20px;font-weight:800;min-width:36px}
 .agenda .it.act{opacity:1;font-weight:800}
 .agenda .it.act:after{content:"";width:16px;height:16px;background:#fff;border:3px solid var(--red);transform:rotate(24deg);border-radius:2px}
-.bigsep{font-size:120px;font-weight:800;line-height:1}
+.bigsep{font-size:150px;font-weight:800;line-height:1;direction:ltr;unicode-bidi:isolate;display:inline-block}
+.backat{font-size:40px;font-weight:800;min-height:56px;margin-top:10px}
+.tbtn{font-family:inherit;font-size:24px;font-weight:700;color:var(--gdd);background:#fff;border:0;border-radius:40px;padding:12px 30px;margin-top:22px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.15);align-self:flex-start}
+.tbtn:focus-visible{outline:3px solid #f59e0b;outline-offset:3px}
 
 /* ================= MECHANICS ================= */
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;background:#2E2D2A;overflow:hidden;font-family:'Heebo',Arial,sans-serif}
 #stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
 #deck{width:1280px;height:720px;flex:0 0 1280px;position:relative;transform-origin:center center;overflow:hidden;background:#fff;box-shadow:0 24px 80px rgba(0,0,0,.55)}
-.slide{position:absolute;inset:0;padding:40px 72px 44px;display:none;flex-direction:column;color:var(--ink);overflow:hidden;
-  background-color:#fff;
-  background-image:linear-gradient(rgba(117,183,67,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(117,183,67,.08) 1px,transparent 1px);
-  background-size:40px 40px}
+.slide{position:absolute;inset:0;padding:40px 72px 44px;display:none;flex-direction:column;color:var(--ink);overflow:hidden;background:#fff}
 .slide.on{display:flex}
 .split{display:flex;gap:40px;flex:1;min-height:0;align-items:center}
 .split>.tx{flex:1.1;min-width:0}
@@ -162,7 +182,7 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
 <a href="#deck" class="skip-link">דלג לתוכן הראשי</a>
 <main id="main-content">
 <h1 class="sr-only">האדריכל הפדגוגי - מצגת הסדנה</h1>
-<div id="stage"><div id="deck" tabindex="-1" aria-label="מצגת. חץ ימינה קדימה, חץ שמאלה אחורה">
+<div id="stage"><div id="deck" tabindex="-1" aria-label="מצגת. חץ שמאלה קדימה, חץ ימינה אחורה">
 
 <!-- 1 פתיחה -->
 <section class="slide">
@@ -214,7 +234,7 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
 <section class="slide spread">
   <img src="assets/logo.png" class="logo" alt="">
   <h2>עם מה יוצאים היום</h2>
-  <div class="cols" style="margin-top:6px">
+  <div class="cols">
     <div class="card f" style="display:flex;gap:22px;align-items:center;padding:28px">
       <svg width="86" height="86" viewBox="0 0 64 64" aria-hidden="true"><rect x="16" y="4" width="32" height="56" rx="6" fill="none" stroke="#5E9A28" stroke-width="4"/><rect x="22" y="14" width="20" height="8" rx="2" fill="#75B743"/><rect x="22" y="27" width="20" height="5" rx="2" fill="#EDF5E4"/><rect x="22" y="36" width="14" height="5" rx="2" fill="#EDF5E4"/><circle cx="32" cy="52" r="2.5" fill="#5E9A28"/></svg>
       <div><h4>אפליקציה לימודית אחת</h4><p>לקורס שלכם, עם קישור שאפשר לשלוח לסטודנטים.</p></div>
@@ -224,7 +244,7 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
       <div><h4>בוט אחד שמכיר את הקורס שלכם</h4><p>לסטודנטים, או עוזר אישי לכם.</p></div>
     </div>
   </div>
-  <div style="display:flex;gap:12px;align-items:center;font-size:26px">
+  <div class="f" style="display:flex;gap:12px;align-items:center;font-size:26px">
     <span class="hotlabel">פתיחה</span><span class="dim" aria-hidden="true">&larr;</span>
     <span class="hotlabel">אפליקציות</span><span class="dim" aria-hidden="true">&larr;</span>
     <span class="hotlabel" style="background:#f1f1ef;color:#6F6D69">הפסקה</span><span class="dim" aria-hidden="true">&larr;</span>
@@ -241,23 +261,41 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
   <div class="split" style="align-items:flex-start">
     <div class="tx">
       <ol class="steps">
-        <li class="f">נכנסים לג'מיני (הכתובת בדף העבודה).</li>
+        <li class="f">נכנסים לג'מיני:
+          <span class="url">gemini.google.com</span></li>
         <li class="f">מתחברים עם <b>חשבון המכללה</b>, ומוודאים שהוא מופיע בתמונת הפרופיל.</li>
-        <li class="f">בוחרים את <b>המודל המתקדם</b>, לא את המהיר.</li>
-        <li class="f">מוצאים את <span class="r">כפתור הקנבס</span>.</li>
+        <li class="f">בבורר המודלים בוחרים את <b>המודל המתקדם</b>, לא את המהיר.</li>
+        <li class="f">לוחצים על <span class="r">הפלוס</span> בשורת הכתיבה, ובוחרים <span class="r">קנבס</span>.</li>
       </ol>
     </div>
-    <div class="im" style="flex-direction:column;align-items:flex-start;padding-top:20px">
-      <div class="gem-mock" aria-hidden="true">
-        <div class="ph">שאלו את ג'מיני</div>
-        <div class="row"><span class="plus">+</span><span class="pill">כלים</span><span class="pill on">קנבס</span><span class="model">מתקדם &#9662;</span></div>
+    <div class="im f" style="flex-direction:column;align-items:flex-start;padding-top:18px">
+      <div class="gm" aria-hidden="true">
+        <div class="bar">
+          <span class="plus">+</span>
+          <span class="ph">יש לך שאלה ל-<!--
+            --><span lang="en">Gemini</span>?</span>
+          <span class="model">
+            <span lang="en">Pro</span>
+            &#8964;</span>
+        </div>
+        <div class="menu">
+          <div class="mi">העלאת קבצים</div>
+          <div class="mi">הוספה מ-<!--
+            --><span lang="en">Drive</span></div>
+          <div class="mi">עוד העלאות <span class="ch">&#8249;</span></div>
+          <div class="sep"></div>
+          <div class="mi">יצירת תמונה</div>
+          <div class="mi">יצירת סרטון</div>
+          <div class="mi">יצירת מוזיקה</div>
+          <div class="mi on">
+            <span lang="en">Canvas</span></div>
+          <div class="mi">כלים נוספים <span class="ch">&#8249;</span></div>
+        </div>
       </div>
-      <div class="callout" aria-hidden="true">&#8593; כאן</div>
-      <p class="sr-only">הדמיה של שורת הכתיבה של ג'מיני, עם כפתור הקנבס מסומן.</p>
+      <p class="sr-only">הדמיה של שורת הכתיבה של ג'מיני: לוחצים על הפלוס, ובתפריט שנפתח בוחרים קנבס.</p>
     </div>
   </div>
-  <p class="closing f" style="color:var(--red);border-right-color:var(--red);margin-left:210px">תקועים? הרימו יד. אפשר גם בהמשך ובכל שלב בסדנה.</p>
-  <div class="qr"><img src="assets/qr-guide.png" alt="קוד QR לדף העבודה"><span>דף העבודה</span></div>
+  <p class="closing f" style="color:var(--red);border-right-color:var(--red)">תקועים? הרימו יד. אפשר גם בהמשך ובכל שלב בסדנה.</p>
 </section>
 
 <!-- 5 גאון על הרצף -->
@@ -265,7 +303,7 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
   <img src="assets/logo.png" class="logo" alt="">
   <h2>גאון על הרצף</h2>
   <p class="statement" style="max-width:1000px">הבינה המלאכותית מבריקה, אבל <span class="r">לא מסיקה מסקנות</span>.<br><span style="font-weight:400">היא עושה בדיוק את מה שהיא מבינה שביקשתם.</span></p>
-  <div class="cols" style="margin-top:30px">
+  <div class="cols">
     <div class="card f"><h4>כשהיא טועה</h4><p>ברוב המקרים לא היינו מדויקים מספיק.</p></div>
     <div class="card f"><h4>אין מילות קסם ואין מתכון סודי</h4><p>פרומפט טוב הוא הסבר ברור ומפורט של מה שאתם רוצים.</p></div>
   </div>
@@ -276,19 +314,21 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
 <section class="slide spread">
   <img src="assets/logo.png" class="logo" alt="">
   <h2>התכנון הוא הבסיס</h2>
-  <div style="margin-top:20px"><span class="hotlabel f">כאן רוב העבודה</span></div>
-  <div class="chain">
-    <div class="node hot f"><div class="c">1</div><div class="t">מתכננים</div></div>
-    <div class="arrow f" aria-hidden="true">&larr;</div>
-    <div class="node hot f"><div class="c">2</div><div class="t">מאשרים</div></div>
-    <div class="arrow f" aria-hidden="true">&larr;</div>
-    <div class="node f"><div class="c">3</div><div class="t">מייצרים</div></div>
-    <div class="arrow f" aria-hidden="true">&larr;</div>
-    <div class="node f"><div class="c">4</div><div class="t">בודקים</div></div>
-    <div class="arrow f" aria-hidden="true">&larr;</div>
-    <div class="node f"><div class="c">5</div><div class="t">מתקנים</div></div>
-    <div class="arrow f" aria-hidden="true">&larr;</div>
-    <div class="node f"><div class="c">6</div><div class="t">משתפים</div></div>
+  <div>
+    <div class="chain">
+      <div class="node hot f"><div class="c">1</div><div class="t">מתכננים</div></div>
+      <div class="arrow f" aria-hidden="true">&larr;</div>
+      <div class="node f"><div class="c">2</div><div class="t">מאשרים</div></div>
+      <div class="arrow f" aria-hidden="true">&larr;</div>
+      <div class="node f"><div class="c">3</div><div class="t">מייצרים</div></div>
+      <div class="arrow f" aria-hidden="true">&larr;</div>
+      <div class="node f"><div class="c">4</div><div class="t">בודקים</div></div>
+      <div class="arrow f" aria-hidden="true">&larr;</div>
+      <div class="node f"><div class="c">5</div><div class="t">מתקנים</div></div>
+      <div class="arrow f" aria-hidden="true">&larr;</div>
+      <div class="node f"><div class="c">6</div><div class="t">משתפים</div></div>
+    </div>
+    <div class="f" style="margin-top:14px"><span class="hotlabel">&#8593; כאן רוב העבודה</span></div>
   </div>
   <p class="closing c f">זה המהלך בשני חלקי הסדנה - גם באפליקציה וגם בבוט.</p>
 </section>
@@ -336,21 +376,15 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
   <img src="assets/logo.png" class="logo" alt="">
   <h2>וייב קודינג: מתארים במילים, ונבנה כלי שעובד</h2>
   <p class="statement" style="font-size:32px;max-width:1080px">"אני לא צריך לדעת מה כתוב בקוד. אני צריך להבין <span class="r">מה אני עושה איתו</span>."</p>
-  <div class="split" style="margin-top:6px">
-    <div class="tx">
-      <ul class="dots">
-        <li class="f">המרצה הופך <b>לאדריכל</b> של מהלך פדגוגי.</li>
-        <li class="f">מסך 1: ברוכים הבאים. מסך 2: מתחלקים לקבוצות. מסך 3: חלוקת תפקידים.</li>
-      </ul>
-    </div>
-    <div class="im">
-      <div class="phones" aria-hidden="true">
-        <div class="phone f"><div class="num">מסך 1</div><div class="pt">ברוכים הבאים לדיון</div><div class="btn">בואו נתחיל</div></div>
-        <div class="phone f"><div class="num">מסך 2</div><div class="pt">מתחלקים לקבוצות</div><div class="dotsrow"><i></i><i></i><i></i><i></i></div></div>
-        <div class="phone f"><div class="num">מסך 3</div><div class="pt">חלוקת תפקידים</div><div class="role">מנחה</div><div class="role">רושם</div><div class="role">שומר זמן</div><div class="role">פרקליט השטן</div></div>
-      </div>
-    </div>
+  <ul class="dots" style="margin-top:4px"><li class="f">המרצה הופך <b>לאדריכל</b> של מהלך פדגוגי.</li></ul>
+  <div class="phones" aria-hidden="true" style="margin-top:8px">
+    <div class="phone f"><div class="num">מסך 1</div><div class="pt">ברוכים הבאים לדיון</div><div class="btn">בואו נתחיל</div></div>
+    <div class="phone f"><div class="num">מסך 2</div><div class="pt">מתחלקים לקבוצות</div><div class="dotsrow"><i></i><i></i><i></i><i></i></div></div>
+    <div class="phone f"><div class="num">מסך 3</div><div class="pt">חלוקת תפקידים</div><div class="role">מנחה</div><div class="role">רושם</div><div class="role">שומר זמן</div><div class="role">פרקליט השטן</div></div>
+    <div class="phone f"><div class="num">מסך 4</div><div class="pt">השאלה לדיון</div><div class="qc"><div class="ln"></div><div class="ln"></div><div class="ln s"></div></div><div class="tm">07:00</div></div>
+    <div class="phone f"><div class="num">מסך 5</div><div class="pt">איסוף תובנות</div><div class="ta"><div class="ln"></div><div class="ln"></div><div class="ln s"></div></div><div class="btn">שליחת כרטיס סיכום</div></div>
   </div>
+  <p class="sr-only">חמישה מסכים: ברוכים הבאים, מתחלקים לקבוצות, חלוקת תפקידים, השאלה לדיון, איסוף תובנות.</p>
   <p class="closing f">אתם מתכננים את מסלול החשיבה. הכלי רק בונה אותו.</p>
 </section>
 
@@ -385,8 +419,8 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
     <span class="chip f">משחק התאמה בין מושג להגדרה</span>
     <span class="chip f">כרטיסיות חזרה לקראת מבחן</span>
   </div></div>
-  <p class="closing f" style="margin-left:210px">בדף העבודה: תבנית לפרומפט התכנון, שמתאימה לכל רעיון.</p>
-  <div class="qr"><img src="assets/qr-guide.png" alt="קוד QR לדף העבודה"><span>דף העבודה</span></div>
+  <p class="closing f" style="margin-left:220px">בהנחיות לתרגול: תבנית לפרומפט התכנון, שמתאימה לכל רעיון.</p>
+  <div class="qr f"><img src="assets/qr-guide.png" alt="קוד QR להנחיות לתרגול"><span>הנחיות לתרגול</span></div>
 </section>
 
 <!-- 12 כשמשהו לא עובד -->
@@ -408,19 +442,19 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
 <section class="slide spread">
   <img src="assets/logo.png" class="logo" alt="">
   <h2>שולחים לסטודנטים</h2>
-  <div style="display:flex;align-items:center;gap:18px;margin:4px 0 18px" aria-hidden="true">
+  <div style="display:flex;align-items:center;justify-content:center;gap:18px" aria-hidden="true">
     <span class="hotlabel" style="font-size:27px;padding:10px 26px">יוצרים בקנבס</span><span style="font-size:32px;color:var(--g)">&larr;</span>
     <span class="hotlabel" style="font-size:27px;padding:10px 26px">כפתור שיתוף &middot; קישור</span><span style="font-size:32px;color:var(--g)">&larr;</span>
-    <span class="hotlabel" style="font-size:27px;padding:10px 26px;background:var(--g);color:#fff">הסטודנטים</span>
+    <span class="hotlabel" style="font-size:27px;padding:10px 26px;background:var(--g);color:#fff">שולחים לסטודנטים</span>
   </div>
   <ul class="dots">
     <li class="f">כפתור השיתוף בקנבס יוצר קישור. את הקישור שולחים <b>במודל, בוואטסאפ או במייל</b>.</li>
-    <li class="f">אם חשבון המכללה חוסם שיתוף - מטמיעים את האפליקציה <b>באתר גוגל</b> פשוט. הצעדים בדף העבודה.</li>
+    <li class="f">אם חשבון המכללה חוסם שיתוף - מטמיעים את האפליקציה <b>באתר גוגל</b> פשוט. הצעדים בהנחיות לתרגול.</li>
   </ul>
   <p class="closing f">לפני ששולחים: <span class="r">פותחים את הקישור בטלפון</span>, ובודקים שהוא עובד גם למי שאינו אתם.</p>
 </section>
 
-<!-- 14 הפסקה -->
+<!-- 14 הפסקה + טיימר -->
 <section class="slide sep" style="justify-content:center">
   <div class="logo-card"><img src="assets/logo.png" alt=""></div>
   <svg class="sep-art" viewBox="0 0 440 360" aria-hidden="true">
@@ -429,8 +463,10 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
     <rect x="230" y="190" width="140" height="140" rx="10" fill="#5E9A28" transform="rotate(10 300 260)"/>
     <rect x="40" y="250" width="80" height="80" rx="8" fill="#fff" opacity=".7" transform="rotate(30 80 290)"/>
   </svg>
-  <h2 style="margin-bottom:8px">הפסקה</h2>
-  <div class="bigsep">15 דקות</div>
+  <h2 style="margin-bottom:4px">הפסקה של 15 דקות</h2>
+  <div><span class="bigsep" id="tmr" role="timer" aria-live="off">15:00</span></div>
+  <div class="backat" id="tmr-back" aria-live="polite"></div>
+  <button type="button" class="tbtn" id="tmr-btn">&#9654; התחלת טיימר</button>
 </section>
 
 <!-- 15 מעבר: חלק ב -->
@@ -456,7 +492,7 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
 <section class="slide spread">
   <img src="assets/logo.png" class="logo" alt="">
   <h2>בוט זה לא סוכן</h2>
-  <div class="cols" style="margin-top:10px">
+  <div class="cols">
     <div class="card f" style="border:2.5px solid var(--g)">
       <span class="tag" style="background:var(--g);color:#fff">בוט (ג'ם)</span>
       <h4>צ'אט עם הגדרה קבועה מאחורי הקלעים</h4>
@@ -475,7 +511,7 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
 <section class="slide spread">
   <img src="assets/logo.png" class="logo" alt="">
   <h2>מתי שווה לבנות ג'ם?</h2>
-  <div class="cols" style="margin-top:10px">
+  <div class="cols">
     <div class="card f"><h4>פעולה שחוזרת, והתוכן בה משתנה</h4><p>כותבים פעם אחת "אני מרצה לקורס כזה, הנה המחוון", ומאז רק מדביקים ולוחצים אנטר.</p></div>
     <div class="card f"><h4>בוט שנשלח לסטודנטים</h4><p>ג'מיני עם תפקיד, מטרה וגבולות, ששומר אותם בתלם.</p></div>
   </div>
@@ -506,26 +542,40 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
 <section class="slide">
   <img src="assets/logo.png" class="logo" alt="">
   <h2>האנטומיה של ג'ם</h2>
-  <div class="split" style="align-items:flex-start">
-    <div class="tx">
+  <div class="split" style="align-items:center;gap:30px">
+    <div class="tx" style="flex:.85">
       <ul class="dots">
-        <li class="f"><b>שם</b> - מה שהסטודנט רואה.</li>
-        <li class="f"><b>תיאור</b> - גם לסטודנט. פונים אליו ישירות.</li>
-        <li class="f"><b>הוראות</b> - <span class="r">הכי חשוב</span>: מי הבוט, מה התפקיד שלו, ואיך הוא מתנהג.</li>
-        <li class="f"><b>ידע</b> - המסמכים שהוא קורא.</li>
+        <li class="f" style="font-size:25px"><b>שם</b> - מה שהסטודנט רואה.</li>
+        <li class="f" style="font-size:25px"><b>תיאור</b> - גם לסטודנט. פונים אליו ישירות.</li>
+        <li class="f" style="font-size:25px"><b>פרומפט בסיס</b> - <span class="r">הכי חשוב</span>: מי הבוט, מה התפקיד שלו, ואיך הוא מתנהג.</li>
+        <li class="f" style="font-size:25px"><b>כלי ברירת המחדל</b> - כלי שנפתח אוטומטית, למשל קנבס.</li>
+        <li class="f" style="font-size:25px"><b>ידע</b> - המסמכים שהוא קורא.</li>
       </ul>
     </div>
-    <div class="im">
-      <div class="editor" aria-hidden="true">
-        <div class="fl">שם</div><div class="fb"></div>
-        <div class="fl">תיאור</div><div class="fb"></div>
-        <div class="fl" style="color:var(--red)">הוראות</div><div class="fb tall"></div>
-        <span class="rw">&#10022; שכתוב עם ג'מיני</span>
-        <div class="fl">ידע</div><div class="fb files"><i>סילבוס</i><i>מאמר</i><i>מטלה</i></div>
+    <div class="im" style="flex:1.15">
+      <div class="ge" aria-hidden="true">
+        <div class="top"><span class="ttl">
+          <span lang="en">Gem</span>
+          חדש</span><span class="save">שמירה</span></div>
+        <div class="body">
+          <div class="fields">
+            <div class="fl">שם</div><div class="fb">כאן מזינים שם ל-<!--
+              --><span lang="en">Gem</span></div>
+            <div class="fl">תיאור</div><div class="fb">כאן מתארים מה הוא עושה</div>
+            <div class="fl" style="color:var(--red)">פרומפט בסיס</div><div class="fb big"><span class="pen">&#10022;</span></div>
+            <div class="row2"><b>כלי ברירת המחדל</b><span>אין כלי ברירת מחדל &#8964;</span></div>
+            <div class="fl">ידע</div><div class="fb">הוספת קבצים שה-<!--
+              --><span lang="en">Gem</span>
+              יכול לקבל מהם מידע &nbsp;+</div>
+            <div class="cb">&#9744; השבתת ציטוטים ממקורות ידע</div>
+          </div>
+          <div class="prev"><b>תצוגה מקדימה</b>כאן בודקים את הבוט לפני ששומרים</div>
+        </div>
       </div>
+      <p class="sr-only">הדמיה של מסך יצירת ג'ם חדש: שם, תיאור, פרומפט בסיס, כלי ברירת המחדל, ידע, ותצוגה מקדימה.</p>
     </div>
   </div>
-  <p class="closing f">כתבתם כמה מילים? כפתור השכתוב יהפוך אותן להוראות מלאות. <span class="r">ואז - חייבים לעבור עליהן.</span></p>
+  <p class="closing f" style="font-size:26px">כתבתם כמה מילים? <b>סמל העט עם הניצוצות</b> בתוך פרומפט הבסיס יהפוך אותן להוראות מלאות. <span class="r">ואז - חייבים לעבור עליהן.</span></p>
 </section>
 
 <!-- 20 מקורות -->
@@ -538,16 +588,16 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
       <ul class="dots">
         <li class="f" style="font-size:24px"><b>קבצים:</b> סילבוס, מאמרי חובה, מצגות, מטלות. עד עשרה קבצים.</li>
         <li class="f" style="font-size:24px"><b>מחברת של נוטבוק אל-אם כמקור:</b> כל מקורות הקורס במחברת אחת, והבוט נשען על כולם. כך עוקפים את מגבלת עשרת הקבצים.</li>
-        <li class="f" style="font-size:24px"><b>בהוראות כותבים:</b> "הישען רק על המקורות, ואמור לי כשהתשובה לא נמצאת בהם."</li>
+        <li class="f" style="font-size:24px"><b>ברירת המחדל:</b> הבוט משתמש בקבצים ומצטט מהם, אבל הוא <b>לא מוגבל</b> אליהם. רוצים שיענה רק מתוכם? כותבים את זה בפרומפט הבסיס.</li>
       </ul>
     </div>
     <div class="im" style="flex:.85">
       <div class="src-dia" aria-hidden="true">
-        <svg viewBox="0 0 470 430"><g stroke="#C9DDB5" stroke-width="3"><line x1="235" y1="215" x2="85" y2="60"/><line x1="235" y1="215" x2="385" y2="60"/><line x1="235" y1="215" x2="85" y2="370"/><line x1="235" y1="215" x2="385" y2="370"/></g></svg>
-        <div class="s" style="right:12px;top:30px">סילבוס</div>
-        <div class="s" style="left:12px;top:30px">מאמרים</div>
-        <div class="s" style="right:12px;bottom:30px">מצגות ומטלות</div>
-        <div class="s nb" style="left:0;bottom:22px">מחברת שלמה</div>
+        <svg viewBox="0 0 440 400"><g stroke="#C9DDB5" stroke-width="3"><line x1="220" y1="200" x2="80" y2="55"/><line x1="220" y1="200" x2="360" y2="55"/><line x1="220" y1="200" x2="80" y2="345"/><line x1="220" y1="200" x2="360" y2="345"/></g></svg>
+        <div class="s" style="right:6px;top:26px">סילבוס</div>
+        <div class="s" style="left:6px;top:26px">מאמרים</div>
+        <div class="s" style="right:6px;bottom:26px">מצגות ומטלות</div>
+        <div class="s nb" style="left:0;bottom:20px">מחברת שלמה</div>
         <div class="bot">הבוט</div>
       </div>
     </div>
@@ -560,42 +610,25 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
   <img src="assets/logo.png" class="logo" alt="">
   <div class="kicker">הדגמה חיה</div>
   <h2>מלווה סוקרטי לקורס</h2>
-  <div class="prompt" style="font-size:25px">
-    <span class="lb">ההוראות - לפני כפתור השכתוב</span>
+  <div class="prompt">
+    <span class="lb">פרומפט הבסיס - לפני השכתוב</span>
     <p style="font-size:26px">אתה מלווה לימודי לסטודנטים בשנה א' בקורס "מבוא לעבודה סוציאלית".</p>
     <p style="font-size:26px">התפקיד שלך לעזור להם להבין את החומר, <b>לא לפתור עבורם</b>.</p>
     <p style="font-size:26px">אל תיתן תשובה מיד: שאל שאלה מכוונת, תן רמז, וחלץ מהסטודנט את ההבנה.</p>
-    <p style="font-size:26px">הישען רק על חומרי הקורס שבידע, ואמור כשהתשובה לא נמצאת בהם.</p>
+    <p style="font-size:26px">ענה רק מתוך חומרי הקורס שבידע, ואמור כשהתשובה לא נמצאת בהם.</p>
     <p style="font-size:26px">אם הסטודנט סוטה מהנושא, קשר את דבריו בחזרה לחומר.</p>
     <p style="font-size:26px">כתוב בעברית, בקצרה ובחום.</p>
   </div>
   <p class="note f" style="margin-top:16px">המבחן: כותבים לו <b>"בא לי לדבר על סקי"</b>. הוא אמור לקשר את זה בחזרה לחומר.</p>
 </section>
 
-<!-- 22 תורכם: בוט -->
-<section class="slide spread">
-  <img src="assets/logo.png" class="logo" alt="">
-  <h2>תורכם: בוט אחד<span class="ws">נתרגל בסדנה</span></h2>
-  <div><p class="lead"><b>בונים מה שאתם רוצים.</b> כמה רעיונות, למי שצריך נקודת פתיחה:</p>
-  <div class="cloud">
-    <span class="chip f">מלווה סוקרטי לחומר הקורס</span>
-    <span class="chip f">פונה וירטואלי לתרגול ראיון</span>
-    <span class="chip f">עוזר לבניית מטלות ומחוונים</span>
-    <span class="chip f">מלווה לכתיבת עבודה, שלב אחרי שלב</span>
-    <span class="chip f">בוט רפלקציה אחרי התנסות בשדה</span>
-    <span class="chip f">מסביר מושגים מתוך מאמרי הקורס</span>
-  </div></div>
-  <p class="closing f" style="margin-left:210px">בדף העבודה: תבנית הוראות שמתאימה לכל רעיון.</p>
-  <div class="qr"><img src="assets/qr-guide.png" alt="קוד QR לדף העבודה"><span>דף העבודה</span></div>
-</section>
-
-<!-- 23 בודקים, מתקנים, משתפים -->
+<!-- 22 בודקים, מתקנים, משתפים -->
 <section class="slide spread">
   <img src="assets/logo.png" class="logo" alt="">
   <h2>בודקים, מתקנים, משתפים</h2>
-  <div class="cols" style="margin-top:6px">
-    <div class="card f"><h4>בודקים</h4><p>בחלון התצוגה, כמו בדיקת תוכנה: <b>מנסים לשבור אותו</b>.</p></div>
-    <div class="card f"><h4>מתקנים</h4><p>בסמל העיפרון. תמיד תחזרו לשם.</p></div>
+  <div class="cols">
+    <div class="card f"><h4>בודקים</h4><p>בחלון התצוגה המקדימה, כמו בדיקת תוכנה: <b>מנסים לשבור אותו</b>.</p></div>
+    <div class="card f"><h4>מתקנים</h4><p>חוזרים לפרומפט הבסיס ומדייקים. תמיד תחזרו לשם.</p></div>
     <div class="card f"><h4>משתפים</h4><p>שיתוף &larr; כל מי שיש לו קישור &larr; <b>הרשאת צפייה</b>.</p></div>
   </div>
   <div class="f" style="background:#fbf1f1;border-radius:10px;padding:16px 22px;border-right:6px solid var(--red)">
@@ -608,11 +641,28 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
   </div>
 </section>
 
+<!-- 23 תורכם: בוט -->
+<section class="slide spread">
+  <img src="assets/logo.png" class="logo" alt="">
+  <h2>תורכם: בוט אחד<span class="ws">נתרגל בסדנה</span></h2>
+  <div><p class="lead"><b>בונים מה שאתם רוצים.</b> כמה רעיונות, למי שצריך נקודת פתיחה:</p>
+  <div class="cloud">
+    <span class="chip f">מלווה סוקרטי לחומר הקורס</span>
+    <span class="chip f">פונה וירטואלי לתרגול ראיון</span>
+    <span class="chip f">עוזר לבניית מטלות ומחוונים</span>
+    <span class="chip f">מלווה לכתיבת עבודה, שלב אחרי שלב</span>
+    <span class="chip f">בוט רפלקציה אחרי התנסות בשדה</span>
+    <span class="chip f">מסביר מושגים מתוך מאמרי הקורס</span>
+  </div></div>
+  <p class="closing f" style="margin-left:220px">בהנחיות לתרגול: תבנית לפרומפט בסיס, שמתאימה לכל רעיון.</p>
+  <div class="qr f"><img src="assets/qr-guide.png" alt="קוד QR להנחיות לתרגול"><span>הנחיות לתרגול</span></div>
+</section>
+
 <!-- 24 הכשל הוא פדגוגי -->
 <section class="slide spread">
   <img src="assets/logo.png" class="logo" alt="">
   <h2>הכשל הוא פדגוגי, לא טכני</h2>
-  <p class="statement" style="max-width:1080px;margin:6px 0 24px">"זו לא בעיה לייצר את הבוט. הבעיה היא <span class="r">למצוא סטודנט שבכלל רוצה ללמוד איתו</span>."</p>
+  <p class="statement" style="max-width:1080px">"זו לא בעיה לייצר את הבוט. הבעיה היא <span class="r">למצוא סטודנט שבכלל רוצה ללמוד איתו</span>."</p>
   <div class="cols">
     <div class="card f"><h4>לפני שמשיקים</h4><p>האם הקהל שלי בכלל ירצה להשתמש בזה?</p></div>
     <div class="card f"><h4>לפני ששולחים</h4><p>מלמדים את הסטודנטים איך לדבר עם הבוט.</p></div>
@@ -623,14 +673,20 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
 <!-- 25 פרטיות וסודיות -->
 <section class="slide">
   <img src="assets/logo.png" class="logo" alt="">
-  <h2>פרטיות וסודיות: כלל לכל מצב</h2>
-  <div class="fill"><div class="cols" style="min-height:300px">
+  <h2>פרטיות וסודיות: מה מותר?</h2>
+  <div class="fill"><div class="cols" style="min-height:330px">
     <div class="card f">
-      <svg width="54" height="54" viewBox="0 0 48 48" aria-hidden="true"><rect x="9" y="21" width="30" height="22" rx="4" fill="#AF242A"/><path d="M15 21v-6a9 9 0 0 1 18 0v6" fill="none" stroke="#AF242A" stroke-width="4"/></svg>
-      <h4 style="margin-top:8px">לא מדביקים פרטים מזהים</h4><p>של סטודנטים, פונים או עמיתים. לא בבוט ולא בצ'אט.</p>
+      <svg width="50" height="50" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 20 24 8l18 12v4H6z" fill="#5E9A28"/><rect x="10" y="26" width="5" height="12" fill="#5E9A28"/><rect x="21.5" y="26" width="5" height="12" fill="#5E9A28"/><rect x="33" y="26" width="5" height="12" fill="#5E9A28"/><rect x="6" y="40" width="36" height="4" fill="#5E9A28"/></svg>
+      <h4 style="margin-top:8px">ההנחיות הן מוסדיות</h4><p>מה מותר תלוי בחבילה שהמוסד רכש מספק הבינה המלאכותית (כאן: גוגל), ובמה שהמוסד אישר.</p>
     </div>
-    <div class="card f"><h4 style="margin-top:62px">תרחישים לתרגול</h4><p>בדיוניים בלבד, או מעובדים כך שאי אפשר לזהות.</p></div>
-    <div class="card f"><h4 style="margin-top:62px">משוב של בוט הוא טיוטה</h4><p><span class="r">ההחלטה נשארת אצלכם.</span></p></div>
+    <div class="card f">
+      <svg width="50" height="50" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="16" r="9" fill="none" stroke="#5E9A28" stroke-width="4"/><path d="M8 42c2-9 9-13 16-13s14 4 16 13" fill="none" stroke="#5E9A28" stroke-width="4" stroke-linecap="round"/></svg>
+      <h4 style="margin-top:8px">בחשבון המוסדי, באישור המוסד</h4><p>יש מצבים שבהם מותר להשתמש במידע אישי בכלי: תחת המשתמש המוסדי, ורק אם המוסד אישר זאת.</p>
+    </div>
+    <div class="card f">
+      <svg width="50" height="50" viewBox="0 0 48 48" aria-hidden="true"><rect x="9" y="21" width="30" height="22" rx="4" fill="#AF242A"/><path d="M15 21v-6a9 9 0 0 1 18 0v6" fill="none" stroke="#AF242A" stroke-width="4"/></svg>
+      <h4 style="margin-top:8px">בחשבון פרטי, או כשלא בטוחים</h4><p>לא מדביקים פרטים מזהים של סטודנטים, פונים או עמיתים. <span class="r">תרחישים לתרגול - בדיוניים.</span></p>
+    </div>
   </div></div>
 </section>
 
@@ -638,22 +694,22 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
 <section class="slide">
   <img src="assets/logo.png" class="logo" alt="">
   <h2>חמישה דברים לקחת הביתה</h2>
-  <ol class="five">
-    <li class="f"><b>התכנון הוא הבסיס.</b> קודם מתכננים ומאשרים, אחר כך מייצרים.</li>
-    <li class="f"><b>גאון על הרצף.</b> הסבירו בצורה חד משמעית, ואל תשאירו שיקול דעת.</li>
-    <li class="f"><b>האשמה כמעט תמיד אצלנו.</b> תשובה לא טובה היא הזדמנות לנסח מחדש.</li>
-    <li class="f"><b>מפרידים שלבים.</b> תוכן, עיצוב, ביצוע - לא הכל בבת אחת.</li>
-    <li class="f"><b>הכשל הוא פדגוגי, לא טכני.</b> בלי סיבה ללמוד, <span class="r">שום בוט לא יציל את המהלך</span>.</li>
-  </ol>
+  <div class="five">
+    <div class="card f"><div class="nb">1</div><h4>התכנון הוא הבסיס</h4><p>קודם מתכננים ומאשרים, אחר כך מייצרים.</p></div>
+    <div class="card f"><div class="nb">2</div><h4>גאון על הרצף</h4><p>הסבירו בצורה חד משמעית, ואל תשאירו שיקול דעת.</p></div>
+    <div class="card f"><div class="nb">3</div><h4>האשמה כמעט תמיד אצלנו</h4><p>תשובה לא טובה היא הזדמנות לנסח מחדש.</p></div>
+    <div class="card f"><div class="nb">4</div><h4>מפרידים שלבים</h4><p>תוכן, עיצוב, ביצוע - לא הכל בבת אחת.</p></div>
+    <div class="card f"><div class="nb">5</div><h4>הכשל הוא פדגוגי, לא טכני</h4><p>בלי סיבה ללמוד, <span class="r">שום בוט לא יציל את המהלך</span>.</p></div>
+  </div>
 </section>
 
 <!-- 27 מה הלאה -->
 <section class="slide spread">
   <img src="assets/logo.png" class="logo" alt="">
   <h2>מה הלאה</h2>
-  <div class="cols" style="margin-top:14px">
+  <div class="cols">
     <div class="card f"><h4>מסמך סיכום</h4><p>בימים הקרובים תקבלו מסמך סיכום של הסדנה, עם כל הפרומפטים.</p></div>
-    <div class="card f"><h4>דף העבודה נשאר פתוח</h4><p>אפשר לחזור אליו מתי שרוצים.</p></div>
+    <div class="card f"><h4>ההנחיות לתרגול נשארות פתוחות</h4><p>אפשר לחזור אליהן מתי שרוצים.</p></div>
   </div>
   <div class="f" style="flex:1;display:flex;align-items:center;justify-content:center">
     <p style="font-size:96px;font-weight:800;color:var(--gd)">שאלות?</p>
@@ -678,7 +734,7 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
 </main>
 <div id="bar"></div><div id="num" aria-live="polite"></div>
 <a id="a11y" href="../guide/#accessibility">הצהרת נגישות</a>
-<div id="help">&rarr; קדימה &middot; &larr; אחורה &middot; F מסך מלא</div>
+<div id="help">&larr; קדימה &middot; &rarr; אחורה &middot; F מסך מלא</div>
 
 <script>
 (function(){
@@ -696,12 +752,12 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
   function next(){ if(fi<frags().length){ fi++; } else if(si<slides.length-1){ si++; fi=0; } render(); }
   function prev(){ if(fi>0){ fi--; } else if(si>0){ si--; fi=frags().length; } render(); }
   function goto(n){ si=Math.max(0,Math.min(slides.length-1,n)); fi=frags().length; render(); }
-  // RTL: right = forward, left = back
+  // Hebrew deck, read right to left: LEFT arrow = forward, RIGHT arrow = back (Tom, 3.10.2026)
   document.addEventListener('keydown', e=>{
-    if(e.target.tagName==='A' && (e.key==='Enter'||e.key===' ')) return;
+    if((e.target.tagName==='A'||e.target.tagName==='BUTTON') && (e.key==='Enter'||e.key===' ')) return;
     switch(e.key){
-      case 'ArrowRight': case 'PageDown': case ' ': case 'Enter': e.preventDefault(); next(); break;
-      case 'ArrowLeft': case 'PageUp': case 'Backspace': e.preventDefault(); prev(); break;
+      case 'ArrowLeft': case 'PageDown': case ' ': case 'Enter': e.preventDefault(); next(); break;
+      case 'ArrowRight': case 'PageUp': case 'Backspace': e.preventDefault(); prev(); break;
       case 'ArrowDown': e.preventDefault(); goto(si+1); break;
       case 'ArrowUp': e.preventDefault(); goto(si-1); break;
       case 'Home': e.preventDefault(); goto(0); break;
@@ -715,6 +771,25 @@ a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
   addEventListener('resize', fit); fit();
   const start=parseInt(location.hash.slice(1)); if(start>=1&&start<=slides.length){ si=start-1; }
   render();
+
+  // break timer: 15 minutes, shows the return time the moment it starts
+  const tBtn=document.getElementById('tmr-btn'), tOut=document.getElementById('tmr'), tBack=document.getElementById('tmr-back');
+  let tInt=null;
+  const two=n=>String(n).padStart(2,'0');
+  tBtn.addEventListener('click', e=>{
+    e.stopPropagation();
+    const end=Date.now()+15*60*1000, d=new Date(end);
+    if(d.getSeconds()>0) d.setMinutes(d.getMinutes()+1);
+    tBack.textContent='חוזרים לכיתה ב-'+two(d.getHours())+':'+two(d.getMinutes());
+    tBtn.textContent='התחלה מחדש';
+    clearInterval(tInt);
+    const tick=()=>{
+      const ms=Math.max(0,end-Date.now());
+      tOut.textContent=two(Math.floor(ms/60000))+':'+two(Math.floor(ms%60000/1000));
+      if(ms<=0){ clearInterval(tInt); tBack.textContent='חוזרים לכיתה!'; }
+    };
+    tick(); tInt=setInterval(tick,250);
+  });
 })();
 </script>
 </body>
