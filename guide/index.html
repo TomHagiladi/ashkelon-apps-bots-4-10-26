@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>דף עבודה - אפליקציות לימודיות ובוטים בהוראה</title>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --g:#75B743; --gd:#5E9A28; --gdd:#3F6E1C; --gp:#EDF5E4; --gt:#F5FAF0;
+  --red:#AF242A; --ink:#3A3936; --muted:#5F5D59; --line:#E2E7DB;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Heebo',Arial,sans-serif;color:var(--ink);background:#fff;font-size:18px;line-height:1.7}
+.skip-link{position:absolute;top:-100%;right:0;background:var(--gdd);color:#fff;padding:.75rem 1.5rem;font-weight:700;z-index:200;text-decoration:none}
+.skip-link:focus{top:0;outline:3px solid #f59e0b;outline-offset:2px}
+a:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:4px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header{background:var(--gt);border-bottom:3px solid var(--g);padding:26px 0 20px}
+header img{width:150px;display:block;margin-bottom:10px}
+h1{font-size:32px;line-height:1.25;color:var(--gdd);margin:0 0 6px;font-weight:800}
+.sub{color:var(--muted);margin:0;font-size:17px}
+nav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+nav ul{list-style:none;margin:0;padding:10px 0;display:flex;flex-wrap:wrap;gap:6px 10px}
+nav a{display:inline-block;color:var(--gdd);text-decoration:none;font-weight:700;font-size:16px;padding:8px 12px;border-radius:20px;background:var(--gp);min-height:44px;line-height:28px}
+nav a:hover{background:#dcebcb}
+main{padding:10px 0 30px}
+section{padding-top:18px;margin-bottom:10px}
+h2{font-size:27px;color:var(--gdd);margin:26px 0 10px;font-weight:800;border-bottom:2px solid var(--gp);padding-bottom:6px}
+h3{font-size:21px;color:var(--ink);margin:24px 0 8px;font-weight:700}
+p{margin:8px 0}
+ol,ul{padding-right:24px;margin:8px 0}
+li{margin:6px 0}
+.ltr{direction:ltr;unicode-bidi:isolate;font-family:Consolas,monospace;font-size:17px;background:#f4f6f8;border:1px solid #e3e8ee;border-radius:4px;padding:2px 8px;display:inline-block}
+.copy{position:relative;background:var(--gt);border:1.5px solid var(--line);border-right:6px solid var(--g);border-radius:8px;padding:16px 18px 16px 18px;margin:12px 0}
+.copy pre{margin:0 0 10px;white-space:pre-wrap;font-family:'Heebo',Arial,sans-serif;font-size:17.5px;line-height:1.75;direction:rtl}
+.cbtn{font-family:inherit;font-size:16px;font-weight:700;color:#fff;background:var(--gdd);border:0;border-radius:20px;padding:8px 20px;min-height:44px;cursor:pointer}
+.cbtn:hover{background:#2f5414}
+.cbtn.done{background:var(--red)}
+.tip{background:#fff8e6;border:1px solid #f0dfae;border-right:6px solid #d4a017;border-radius:8px;padding:12px 16px;margin:12px 0}
+.warn{background:#fbf1f1;border:1px solid #efd3d3;border-right:6px solid var(--red);border-radius:8px;padding:12px 16px;margin:12px 0}
+.ideas{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0}
+.ideas li{background:#fff;border:2px solid var(--g);border-radius:24px;padding:6px 16px;margin:0;font-size:17px}
+table{border-collapse:collapse;width:100%;font-size:17px}
+th{background:var(--gdd);color:#fff;text-align:right;padding:10px 12px}
+td{border-bottom:1px solid var(--line);padding:10px 12px;vertical-align:top}
+.table-scroll-wrapper{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1rem 0;border-radius:8px}
+.inline-copy{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.inline-copy span{font-weight:700}
+.inline-copy .cbtn{padding:6px 14px;font-size:15px}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:10px 0}
+.fields div{background:#fff;border:1.5px solid var(--line);border-radius:8px;padding:10px 14px}
+.fields div b{color:var(--gdd)}
+.fields .main{border:2.5px solid var(--red)}
+footer{background:var(--gt);border-top:3px solid var(--g);padding:24px 0 40px;margin-top:30px}
+.accessibility-statement{background:#fff;border:1px solid var(--line);border-radius:8px;padding:1.2rem 1.6rem;max-width:700px;margin:0 auto}
+.accessibility-statement h2{font-size:21px;margin-top:0}
+#live{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+@media (max-width:1024px){ h1{font-size:30px} }
+@media (max-width:768px){ nav{position:static} body{font-size:17px} h1{font-size:26px} h2{font-size:23px} .fields{grid-template-columns:1fr} }
+@media (max-width:480px){ .wrap{padding:0 14px} h1{font-size:23px} .copy pre{font-size:16.5px} nav a{font-size:15px;padding:8px 10px} }
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">דלג לתוכן הראשי</a>
+
+<header>
+  <div class="wrap">
+    <img src="logo.png" alt="תום הגלעדי - הלוגו">
+    <h1>דף עבודה: אפליקציות לימודיות ובוטים בהוראה</h1>
+    <p class="sub">סדנה לסגל הפקולטה לעבודה סוציאלית &middot; המכללה האקדמית אשקלון &middot; 4.10.2026</p>
+  </div>
+</header>
+
+<nav aria-label="תוכן הדף">
+  <div class="wrap">
+    <ul>
+      <li><a href="#start">לפני שמתחילים</a></li>
+      <li><a href="#apps">חלק א: אפליקציה</a></li>
+      <li><a href="#bots">חלק ב: בוט</a></li>
+      <li><a href="#privacy">פרטיות</a></li>
+      <li><a href="#five">חמישה עקרונות</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main-content">
+<div class="wrap">
+
+<section id="start" aria-labelledby="h-start">
+  <h2 id="h-start">לפני שמתחילים</h2>
+  <ol>
+    <li>נכנסים לג'מיני:
+      <br><span class="ltr" lang="en">gemini.google.com</span></li>
+    <li>מתחברים עם <b>חשבון המכללה</b>, ומוודאים שהוא מופיע בתמונת הפרופיל שבפינה.</li>
+    <li>בבורר המודלים בוחרים את <b>המודל המתקדם</b>, לא את המהיר.</li>
+    <li>מוצאים את <b>כפתור הקנבס</b> בשורת הכתיבה. לפעמים הוא נמצא תחת "כלים".</li>
+  </ol>
+  <p class="tip"><b>טיפ:</b> אם תשובה מתעכבת יותר מדקה, אפשר לעבור למודל המהיר ולנסות שוב.</p>
+</section>
+
+<section id="apps" aria-labelledby="h-apps">
+  <h2 id="h-apps">חלק א: אפליקציה לקורס שלכם</h2>
+  <p><b>בונים מה שאתם רוצים.</b> התבנית מתאימה לכל רעיון: מחליפים את מה שבסוגריים המרובעים.</p>
+
+  <h3>שלב 1: מפעילים קנבס ומדביקים את פרומפט התכנון</h3>
+  <div class="copy">
+<pre id="t-app">אני מרצה בפקולטה לעבודה סוציאלית, בקורס [שם הקורס]. הסטודנטים שלי: [שנה, כמה, מה מאפיין אותם].
+אני רוצה אפליקציה ש[מה היא עושה, במשפט אחד].
+הסטודנטים ישתמשו בה [מתי ואיפה: בשיעור, בבית, בטלפון או במחשב].
+בסוף השימוש הם [מה יוצא מזה: תשובה, תובנה, ציון, תוצר].
+האפליקציה בעברית, מימין לשמאל, ומותאמת לטלפון.
+בוא נתכנן קודם את המהלך ואת המסכים. אל תכתוב קוד עכשיו - רק נתכנן.</pre>
+    <button type="button" class="cbtn" data-copy="t-app" aria-label="העתקת תבנית פרומפט התכנון">העתק</button>
+  </div>
+
+  <h3>שלב 2: עוברים על התכנון ומתקנים</h3>
+  <p>קוראים את ההצעה, ומבקשים שינויים בצ'אט. אפשר גם לערוך ישירות בחלון הקנבס.</p>
+
+  <h3>שלב 3: כשהתכנון טוב, מבקשים את האפליקציה</h3>
+  <div class="copy">
+<pre id="t-go">נראה מעולה, כתוב את האפליקציה.</pre>
+    <button type="button" class="cbtn" data-copy="t-go" aria-label="העתקת המשפט כתוב את האפליקציה">העתק</button>
+  </div>
+
+  <h3>שלב 4: בודקים בתצוגה המקדימה</h3>
+  <p>לוחצים על הכפתורים, מקלידים, מנסים לשבור. כל שינוי מבקשים בצ'אט, במשפט ברור.</p>
+
+  <h3>רעיונות, אם צריך נקודת פתיחה</h3>
+  <ul class="ideas">
+    <li>דיון בקבוצות עם חלוקת תפקידים</li>
+    <li>דילמה אתית מסתעפת, עם השלכות לכל בחירה</li>
+    <li>תרגול מושגים עם הסבר לכל תשובה</li>
+    <li>סימולציה של תהליך, שלב אחרי שלב</li>
+    <li>משחק התאמה בין מושג להגדרה</li>
+    <li>כרטיסיות חזרה לקראת מבחן</li>
+  </ul>
+
+  <h3>כשמשהו לא עובד</h3>
+  <table>
+    <thead><tr><th scope="col">מה קרה</th><th scope="col">מה כותבים לו</th></tr></thead>
+    <tbody>
+      <tr><td>הופיעה שגיאה</td><td><div class="inline-copy"><span id="t-e1">קיבלתי את השגיאה הזו, תקן:</span><button type="button" class="cbtn" data-copy="t-e1" aria-label="העתקת משפט לשגיאה">העתק</button></div>ומדביקים אחריו את כל הודעת השגיאה.</td></tr>
+      <tr><td>הוא יצר משהו שלא ביקשתם</td><td><div class="inline-copy"><span id="t-e2">אל תיצור תוצרים. רק תכנן איתי.</span><button type="button" class="cbtn" data-copy="t-e2" aria-label="העתקת משפט לעצירת יצירה">העתק</button></div></td></tr>
+      <tr><td>הוא החזיר עריכה שעשיתם בעצמכם</td><td><div class="inline-copy"><span id="t-e3">עשיתי שינויים, אל תחזיר אותם.</span><button type="button" class="cbtn" data-copy="t-e3" aria-label="העתקת משפט לשמירת עריכות">העתק</button></div></td></tr>
+    </tbody>
+  </table>
+  <p>אתם לא צריכים להבין את השגיאה. אתם מדברים עם מתכנת.</p>
+
+  <h3>שיתוף עם הסטודנטים</h3>
+  <ol>
+    <li>לוחצים על כפתור השיתוף בקנבס, ומעתיקים את הקישור.</li>
+    <li>פותחים את הקישור בטלפון, ובודקים שהוא עובד גם למי שאינו אתם.</li>
+    <li>שולחים במודל, בוואטסאפ או במייל.</li>
+  </ol>
+  <p><b>אם חשבון המכללה חוסם שיתוף</b>, מטמיעים את האפליקציה באתר גוגל פשוט:</p>
+  <ol>
+    <li>מבקשים מג'מיני:
+      <div class="copy">
+<pre id="t-embed">אני רוצה להטמיע את האפליקציה באתר גוגל. תן לי את קוד ההטמעה, והסבר לי צעד אחר צעד איך לעשות את זה.</pre>
+        <button type="button" class="cbtn" data-copy="t-embed" aria-label="העתקת בקשה לקוד הטמעה">העתק</button>
+      </div></li>
+    <li>מעתיקים את הקוד שהוא נותן, בכפתור ההעתקה שליד הקוד.</li>
+    <li>נכנסים לאתרי גוגל ופותחים אתר ריק חדש:
+      <br><span class="ltr" lang="en">sites.google.com</span></li>
+    <li>בתפריט הצד בוחרים "הטמעה", עוברים ללשונית "קוד", מדביקים, ולוחצים "הבא" ואז "הוספה".</li>
+    <li>מוחקים את באנר הכותרת, ומותחים את מסגרת האפליקציה על כל העמוד.</li>
+    <li>לוחצים "פרסום", נותנים לאתר שם באותיות לועזיות, ומפרסמים.</li>
+    <li>מעתיקים את הקישור לאתר, ושולחים אותו לסטודנטים.</li>
+  </ol>
+</section>
+
+<section id="bots" aria-labelledby="h-bots">
+  <h2 id="h-bots">חלק ב: בוט לקורס שלכם</h2>
+  <p><b>בונים מה שאתם רוצים.</b> התבנית מתאימה לכל רעיון.</p>
+
+  <h3>שלב 1: פותחים ג'ם חדש</h3>
+  <p>בתפריט הצד של ג'מיני נכנסים לג'מס, ובוחרים ביצירת ג'ם חדש. ארבעת השדות:</p>
+  <div class="fields">
+    <div><b>שם</b> - מה שהסטודנט רואה.</div>
+    <div><b>תיאור</b> - גם לסטודנט. פונים אליו ישירות.</div>
+    <div class="main"><b>הוראות</b> - הכי חשוב: מי הבוט, מה התפקיד שלו, ואיך הוא מתנהג.</div>
+    <div><b>ידע</b> - המסמכים שהבוט קורא.</div>
+  </div>
+
+  <h3>שלב 2: כותבים הוראות לפי התבנית</h3>
+  <div class="copy">
+<pre id="t-bot">אתה [תפקיד הבוט] של [למי: סטודנטים בשנה... / אני, המרצה] בקורס [שם הקורס].
+המטרה שלך: [מה הבוט עוזר להשיג].
+איך אתה מתנהג: [למשל: שואל לפני שעונה, לא נותן תשובות, נותן משוב לפי מחוון].
+הישען רק על המקורות שבידע, ואמור כשהתשובה לא נמצאת בהם.
+אם סוטים מהנושא, החזר בעדינות לנושא.
+כתוב בעברית, בקצרה ובחום.</pre>
+    <button type="button" class="cbtn" data-copy="t-bot" aria-label="העתקת תבנית ההוראות לבוט">העתק</button>
+  </div>
+  <p>אחרי ההדבקה לוחצים על <b>כפתור השכתוב של ג'מיני</b> שליד שדה ההוראות. הוא יהפוך את המשפטים להוראות מלאות. <b>מה שהוא כתב הוא טיוטה</b> - קוראים ומדייקים.</p>
+
+  <h3>שלב 3: מוסיפים מקורות</h3>
+  <ul>
+    <li><b>קבצים:</b> סילבוס, מאמרי חובה, מצגות, מטלות. עד עשרה קבצים.</li>
+    <li><b>מחברת של נוטבוק אל-אם:</b> אפשר לחבר מחברת שלמה כמקור. כל מקורות הקורס במקום אחד, והבוט נשען על כולם.</li>
+    <li><b>טיפ:</b> מסמך גוגל או קובץ טקסט עדיפים על קובץ PDF בעברית, שלפעמים נקרא עם אותיות הפוכות.</li>
+  </ul>
+  <p class="warn"><b>חשוב:</b> מי שמקבל את הבוט רואה גם את ההוראות ואת קובצי הידע. לא שמים שם שום דבר חסוי.</p>
+
+  <h3>שלב 4: בודקים ומתקנים</h3>
+  <p>בחלון התצוגה מנסים לשבור את הבוט. למשל, כותבים לו "בא לי לדבר על סקי" ובודקים שהוא מחזיר לחומר. מתקנים בסמל העיפרון, ובודקים שוב.</p>
+
+  <h3>שלב 5: משתפים</h3>
+  <p>שיתוף &larr; כל מי שיש לו קישור &larr; <b>הרשאת צפייה</b> &larr; מעתיקים את הקישור. כך הסטודנטים מדברים עם הבוט, ולא יכולים לערוך אותו.
+  <br>בחשבונות מכללה, אפשרויות השיתוף תלויות בהגדרות של המכללה.</p>
+
+  <h3>רעיונות, אם צריך נקודת פתיחה</h3>
+  <ul class="ideas">
+    <li>מלווה סוקרטי לחומר הקורס</li>
+    <li>פונה וירטואלי לתרגול ראיון</li>
+    <li>עוזר לבניית מטלות ומחוונים</li>
+    <li>מלווה לכתיבת עבודה, שלב אחרי שלב</li>
+    <li>בוט רפלקציה אחרי התנסות בשדה</li>
+    <li>מסביר מושגים מתוך מאמרי הקורס</li>
+  </ul>
+
+  <h3>ג'מס וסקילים: מה כדאי לדעת</h3>
+  <p>גוגל מחליפה את הג'מס ב"סקילים": הנחיות קבועות שאפשר להפעיל בתוך כל שיחה. בחשבונות חינוך הג'מס ממשיכים לעבוד עד 1.6.2027, ואז עוברים לסקילים באופן אוטומטי, יחד עם הקבצים. מה שבונים היום לא הולך לפח.</p>
+</section>
+
+<section id="privacy" aria-labelledby="h-privacy">
+  <h2 id="h-privacy">פרטיות וסודיות: כלל לכל מצב</h2>
+  <ul>
+    <li>לא מדביקים פרטים מזהים של סטודנטים, פונים או עמיתים. לא בבוט ולא בצ'אט.</li>
+    <li>תרחישים לתרגול - בדיוניים בלבד, או מעובדים כך שאי אפשר לזהות.</li>
+    <li>משוב של בוט על עבודה הוא טיוטה. ההחלטה נשארת אצלכם.</li>
+  </ul>
+</section>
+
+<section id="five" aria-labelledby="h-five">
+  <h2 id="h-five">חמישה דברים לקחת הביתה</h2>
+  <ol>
+    <li><b>התכנון הוא הבסיס.</b> קודם מתכננים ומאשרים, אחר כך מייצרים.</li>
+    <li><b>גאון על הרצף.</b> הסבירו בצורה חד משמעית, ואל תשאירו שיקול דעת.</li>
+    <li><b>האשמה כמעט תמיד אצלנו.</b> תשובה לא טובה היא הזדמנות לנסח מחדש.</li>
+    <li><b>מפרידים שלבים.</b> תוכן, עיצוב, ביצוע - לא הכל בבת אחת.</li>
+    <li><b>הכשל הוא פדגוגי, לא טכני.</b> בלי סיבה ללמוד, שום בוט לא יציל את המהלך.</li>
+  </ol>
+</section>
+
+<section id="contact" aria-labelledby="h-contact">
+  <h2 id="h-contact">יצירת קשר</h2>
+  <p>תום הגלעדי</p>
+  <p><a href="mailto:tomhagiladi@gmail.com">tomhagiladi@gmail.com</a></p>
+  <p><a href="https://www.tomhagiladi.com/">האתר של תום הגלעדי</a></p>
+</section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="accessibility-statement" id="accessibility">
+      <h2>הצהרת נגישות</h2>
+      <p>אתר זה עומד בדרישות תקנות שוויון זכויות לאנשים עם מוגבלות (התאמות נגישות לשירות), התשע"ג-2013, ותקן ישראלי ת"י 5568 המבוסס על הנחיות
+      <span lang="en" dir="ltr">WCAG 2.0</span>
+      ברמה AA.</p>
+      <p>אם נתקלתם בבעיית נגישות באתר, אנא פנו אלינו ונשמח לסייע:</p>
+      <p><strong>רכז נגישות:</strong> תום הגלעדי<br>
+      <strong>אימייל:</strong> <a href="mailto:tomhagiladi@gmail.com">tomhagiladi@gmail.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<div id="live" aria-live="polite"></div>
+<script>
+document.querySelectorAll('table').forEach(function(table){
+  var w=document.createElement('div');
+  w.className='table-scroll-wrapper'; w.setAttribute('tabindex','0'); w.setAttribute('role','region'); w.setAttribute('aria-label','טבלה נגללת');
+  table.parentNode.insertBefore(w,table); w.appendChild(table);
+});
+var live=document.getElementById('live');
+document.querySelectorAll('.cbtn').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var el=document.getElementById(btn.getAttribute('data-copy'));
+    var text=el.innerText.trim();
+    function ok(){ btn.textContent='הועתק'; btn.classList.add('done'); live.textContent='הטקסט הועתק'; setTimeout(function(){btn.textContent='העתק';btn.classList.remove('done');},1800); }
+    if(navigator.clipboard&&window.isSecureContext){ navigator.clipboard.writeText(text).then(ok,fallback); } else { fallback(); }
+    function fallback(){ var ta=document.createElement('textarea'); ta.value=text; ta.setAttribute('readonly',''); ta.style.position='absolute'; ta.style.right='-9999px'; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy'); ok();}catch(e){} document.body.removeChild(ta); }
+  });
+});
+</script>
+</body>
+</html>
